@@ -25,7 +25,7 @@ class StdOutListener(StreamListener):
                     and d['is_quote_status'] == False:
                 print("Text: ", d['text'])
                 #print("Data: ", d)
-                winsound.PlaySound('alarm_sound1.wav', winsound.SND_FILENAME)
+                winsound.PlaySound('alarm_sound2.wav', winsound.SND_FILENAME)
                 return True
             elif 'coin of the' in d['text']:
                 print("Related to 'coin of the day' Text - user : ",d['user']['name'], " : ", d['text'],'\n')
